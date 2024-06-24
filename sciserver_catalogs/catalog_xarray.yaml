@@ -103,7 +103,7 @@ sources:
     description: Grid of IGPwinter
     driver: netcdf
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/IGP/grid.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGP/grid.nc
       xarray_kwargs:
         engine: netcdf4
         drop_variables: ['RC', 'RF', 'RU', 'RL']
@@ -150,7 +150,7 @@ sources:
     description: Fields of IGPwinter
     driver: netcdf
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/IGP/day*.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGP/day*.nc
       xarray_kwargs:
         engine: netcdf4
         concat_dim: T
@@ -230,7 +230,7 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ERAI/grid.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ERAI/grid.nc
       xarray_kwargs:
         engine: netcdf4
         drop_variables: ['RC', 'RF', 'RU', 'RL']
@@ -281,7 +281,7 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ERAI/6H*.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ERAI/6H*.nc
       xarray_kwargs:
         engine: netcdf4
         concat_dim: T
@@ -299,7 +299,7 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ERAI/grid.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ERAI/grid.nc
       xarray_kwargs:
         engine: netcdf4
         drop_variables: ['RC', 'RF', 'RU', 'RL']
@@ -350,7 +350,7 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ERAI/6H*.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ERAI/6H*.nc
       xarray_kwargs:
         engine: netcdf4
         concat_dim: T
@@ -368,7 +368,7 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ERAI/1D*.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ERAI/1D*.nc
       xarray_kwargs:
         engine: netcdf4
         concat_dim: T
@@ -689,7 +689,7 @@ sources:
     driver: zarr
     model: MITGCM
     args:
-      urlpath: '/home/idies/workspace/OceanCirculation/ECCO_v4r4/ecco_v4r4'
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/ECCO_v4r4/ecco_v4r4
       #drop_variables: ['k_u', 'k_p1', 'k_l', 'k']
     metadata:
       swap_dims:
@@ -975,7 +975,7 @@ sources:
     model: MITGCM
     args:
       # urlpath: /sciserver/oceanography/exp_Arctic_Control/GRID/grid_glued_swapped.nc
-      urlpath: /home/idies/workspace/OceanCirculation/exp_Arctic_Control/GRID/grid_glued_swapped.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_Arctic_Control/GRID/grid_glued_swapped.nc
       xarray_kwargs:
         engine: netcdf4
         drop_variables: ['RC', 'RF', 'RU', 'RL']
