@@ -7,7 +7,8 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ASR/grid.nc
+      #urlpath: /home/idies/workspace/OceanCirculation/exp_ASR/grid.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ASR/grid.nc
       xarray_kwargs:
         engine: netcdf4
         drop_variables: ['RC', 'RF', 'RU', 'RL']
@@ -67,7 +68,8 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ASR/full_2007-09-01.nc
+      #urlpath: /home/idies/workspace/OceanCirculation/exp_ASR/full_2007-09-01.nc
+      urlpath: /home/idies/workspace/cean_circulation_ceph/exp_ASR/full_2007-09-01.nc
       xarray_kwargs:
         engine: netcdf4
     metadata:
@@ -87,7 +89,8 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: /home/idies/workspace/OceanCirculation/exp_ASR/crop_2007-09-01.nc
+      #urlpath: /home/idies/workspace/OceanCirculation/exp_ASR/crop_2007-09-01.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ASR/crop_2007-09-01.nc
       xarray_kwargs:
         engine: netcdf4
     metadata:
