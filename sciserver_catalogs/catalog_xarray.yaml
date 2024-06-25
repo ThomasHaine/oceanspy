@@ -920,7 +920,6 @@ sources:
     driver: zarr
     model: HyCOM
     args:
-      #urlpath: /home/idies/workspace/poseidon/data10_01/HyCOM
       urlpath: /home/idies/workspace/ocean_circulation_ceph/HyCOM
     xarray_kwargs:
       engine: zarr
@@ -958,7 +957,8 @@ sources:
     driver: zarr
     model: NA
     args:
-      urlpath: '/home/idies/workspace/poseidon/data12_01/ETOPO'
+      #urlpath: '/home/idies/workspace/poseidon/data12_01/ETOPO'
+      urlpath: '/home/idies/workspace/ocean_circulation_ceph/ETOPO'
     xarray_kwargs:
       engine: zarr
     metadata:
