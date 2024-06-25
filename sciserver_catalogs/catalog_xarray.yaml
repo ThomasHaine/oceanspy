@@ -957,8 +957,7 @@ sources:
     driver: zarr
     model: NA
     args:
-      #urlpath: '/home/idies/workspace/poseidon/data12_01/ETOPO'
-      urlpath: '/home/idies/workspace/ocean_circulation_ceph/ETOPO'
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/ETOPO
     xarray_kwargs:
       engine: zarr
     metadata:
