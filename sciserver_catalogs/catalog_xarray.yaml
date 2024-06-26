@@ -786,7 +786,8 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      urlpath: '/home/idies/workspace/poseidon/data03_02/daily_mean_ecco/ECCO-GRID.nc'
+      #urlpath: '/home/idies/workspace/poseidon/data03_02/daily_mean_ecco/ECCO-GRID.nc'
+      urlpath: /home/idies/workspace/poseidon_ceph/daily_mean_ecco/ECCO-GRID.nc
       #drop_variables: ['k_u', 'k_p1', 'k_l', 'k']
     metadata:
       swap_dims:
@@ -825,7 +826,8 @@ sources:
     driver: zarr
     model: MITGCM
     args:
-      urlpath: '/home/idies/workspace/poseidon/data0*_02/daily_mean_ecco/zarr/snap*'
+      #urlpath: '/home/idies/workspace/poseidon/data0*_02/daily_mean_ecco/zarr/snap*'
+      urlpath: /home/idies/workspace/poseidon_ceph/daily_mean_ecco/zarr/snap*
       drop_variables: ['XC', 'YC']
     xarray_kwargs:
       engine: zarr
@@ -843,7 +845,8 @@ sources:
     driver: zarr
     model: MITGCM
     args:
-      urlpath: '/home/idies/workspace/poseidon/data0*_02/daily_mean_ecco/zarr/mean*'
+      #urlpath: '/home/idies/workspace/poseidon/data0*_02/daily_mean_ecco/zarr/mean*'
+      urlpath: /home/idies/workspace/poseidon_ceph/daily_mean_ecco/zarr/mean*'
       drop_variables: ['XC', 'YC', 'XG', 'YG', 'time_midp']
     xarray_kwargs:
       engine: zarr
@@ -1021,7 +1024,6 @@ sources:
     driver: zarr
     model: MITGCM
     args:
-      #urlpath: '/home/idies/workspace/poseidon/data10_02/arctic_control.zarr'
       urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_Arctic_Control/arctic_control.zarr
     xarray_kwargs:
       engine: zarr
