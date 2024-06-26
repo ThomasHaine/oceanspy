@@ -974,7 +974,6 @@ sources:
     driver: netcdf
     model: MITGCM
     args:
-      # urlpath: /sciserver/oceanography/exp_Arctic_Control/GRID/grid_glued_swapped.nc
       urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_Arctic_Control/GRID/grid_glued_swapped.nc
       xarray_kwargs:
         engine: netcdf4
@@ -1022,7 +1021,8 @@ sources:
     driver: zarr
     model: MITGCM
     args:
-      urlpath: '/home/idies/workspace/poseidon/data10_02/arctic_control.zarr'
+      #urlpath: '/home/idies/workspace/poseidon/data10_02/arctic_control.zarr'
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_Arctic_Control/arctic_control.zarr
     xarray_kwargs:
       engine: zarr
     metadata:
