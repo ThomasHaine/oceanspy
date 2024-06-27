@@ -103,7 +103,7 @@ sources:
     description: Grid of IGPwinter
     driver: netcdf
     args:
-      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGP/grid.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGPwinter/grid.nc
       xarray_kwargs:
         engine: netcdf4
         drop_variables: ['RC', 'RF', 'RU', 'RL']
@@ -150,7 +150,7 @@ sources:
     description: Fields of IGPwinter
     driver: netcdf
     args:
-      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGP/day*.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGPwinter/day*.nc
       xarray_kwargs:
         engine: netcdf4
         concat_dim: T
