@@ -166,7 +166,7 @@ sources:
     description: Grid of IGPyearlong
     driver: netcdf
     args:
-      urlpath: /home/idies/workspace/ocean_circulation_ceph/vc1/IGPyearlong/grid.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGPyearlong/grid.nc
       xarray_kwargs:
         engine: netcdf4
         drop_variables: ['RC', 'RF', 'RU', 'RL']
@@ -213,7 +213,7 @@ sources:
     description: Fields of IGPyearlong
     driver: netcdf
     args:
-      urlpath: /home/idies/workspace/ocean_circulation_ceph/vc1/IGPyearlong/day_*.nc
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/IGPyearlong/day_*.nc
       xarray_kwargs:
         engine: netcdf4
         concat_dim: T
