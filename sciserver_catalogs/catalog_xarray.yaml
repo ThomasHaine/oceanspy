@@ -451,7 +451,7 @@ sources:
         #combine: nested
     metadata:
       rename:
-        T: time
+        #T: time
       original_output: snapshot
 
   # ===========================
