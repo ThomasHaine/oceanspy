@@ -450,7 +450,7 @@ sources:
       parallel: true
         #combine: nested
     metadata:
-      rename:
+      #rename:
         #T: time
       original_output: snapshot
 
