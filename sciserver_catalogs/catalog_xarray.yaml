@@ -446,7 +446,7 @@ sources:
     xarray_kwargs:
         #engine: netcdf4
       engine: zarr
-      concat_dim: T
+        #concat_dim: T
       parallel: true
         #combine: nested
     metadata:
