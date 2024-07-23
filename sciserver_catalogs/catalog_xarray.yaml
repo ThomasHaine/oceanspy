@@ -448,7 +448,7 @@ sources:
       engine: zarr
       concat_dim: T
       parallel: true
-      combine: nested
+        #combine: nested
     metadata:
       rename:
         T: time
