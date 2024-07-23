@@ -389,10 +389,10 @@ sources:
     args:
       #urlpath: /home/ldies/workspace/ocean_circulation_ceph/exp_ASR/grid.nc
       urlpath: /home/idies/workspace/poseidon-staging/exp_ASR_zarr
-      xarray_kwargs:
+    xarray_kwargs:
         #engine: netcdf4
-        engine: zarr
-        drop_variables: ['RC', 'RF', 'RU', 'RL']
+      engine: zarr
+      drop_variables: ['RC', 'RF', 'RU', 'RL']
     metadata:
       manipulate_coords:
         fillna: true
@@ -443,12 +443,12 @@ sources:
     args:
       #urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ASR/full*.nc
       urlpath: /home/idies/workspace/poseidon-staging/exp_ASR_zarr
-      xarray_kwargs:
+    xarray_kwargs:
         #engine: netcdf4
-        engine: zarr
-        concat_dim: T
-        parallel: true
-        combine: nested
+      engine: zarr
+      concat_dim: T
+      parallel: true
+      combine: nested
     metadata:
       rename:
         T: time
