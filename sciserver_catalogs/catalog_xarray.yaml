@@ -383,15 +383,12 @@ sources:
   # EGshelfIIseas2km_ASR_full
   grd_EGshelfIIseas2km_ASR_full:
     description: Grid of EGshelfIIseas2km_ASR_full
-      #driver: netcdf
-    driver: zarr
+    driver: netcdf
     model: MITGCM
     args:
-      #urlpath: /home/ldies/workspace/ocean_circulation_ceph/exp_ASR/grid.nc
-      urlpath: /home/idies/workspace/poseidon-staging/exp_ASR_zarr
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ASR/grid.nc
     xarray_kwargs:
-        #engine: netcdf4
-      engine: zarr
+      engine: netcdf4
       drop_variables: ['RC', 'RF', 'RU', 'RL']
     metadata:
       manipulate_coords:
@@ -437,21 +434,18 @@ sources:
 
   fld_EGshelfIIseas2km_ASR_full:
     description: Fields of EGshelfIIseas2km_ASR_full
-      #driver: netcdf
-    driver: zarr
+    driver: netcdf
     model: MITGCM
     args:
-      #urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ASR/full*.nc
-      urlpath: /home/idies/workspace/poseidon-staging/exp_ASR_zarr
+      urlpath: /home/idies/workspace/ocean_circulation_ceph/exp_ASR/full*.nc
     xarray_kwargs:
-        #engine: netcdf4
-      engine: zarr
-        #concat_dim: T
+      engine: netcdf4
+      concat_dim: T
       parallel: true
-        #combine: nested
+      combine: nested
     metadata:
-      #rename:
-        #T: time
+      rename:
+        T: time
       original_output: snapshot
 
   # ===========================
